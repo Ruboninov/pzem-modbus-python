@@ -39,7 +39,10 @@ https://de.aliexpress.com/item/32912901621.html
     Energy: 0.02 WH
 ```
 
-- if you get a "serial.Serial" Argument error, please uninstall "serial" and "pyserial" with pip uninstall... , then run ```pip install -r requirements.txt``` again
+- if you get a "serial.Serial" Argument error, please uninstall libraries "serial" and "pyserial" with 
+```pip uninstall serial```
+```pip uninstall pyserial```
+- then run ```pip install -r requirements.txt``` again
 - if you are running under Windows, please replace the 
 ```instrument = minimalmodbus.Instrument('/dev/tty.usbserial-120', SALVE_ADDRESS)```
 with
