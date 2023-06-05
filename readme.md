@@ -44,7 +44,11 @@ https://de.aliexpress.com/item/32912901621.html
 ```pip uninstall pyserial```
 - then run ```pip install -r requirements.txt``` again
 - if you are running under Windows, please replace the 
+
 ```instrument = minimalmodbus.Instrument('/dev/tty.usbserial-120', SALVE_ADDRESS)```
+
 with
+
 ```instrument = minimalmodbus.Instrument('COMx', SALVE_ADDRESS)```
-replacing x with the COM-Port number
+
+replacing x with the actual COM-Port number of your PC interface
