@@ -41,3 +41,7 @@ https://de.aliexpress.com/item/32912901621.html
 
 - if you get a "serial.Serial" Argument error, please uninstall "serial" and "pyserial" with pip uninstall... , then run ```pip install -r requirements.txt``` again
 - if you are running under Windows, please replace the 
+```instrument = minimalmodbus.Instrument('/dev/tty.usbserial-120', SALVE_ADDRESS)```
+with
+```instrument = minimalmodbus.Instrument('COMx', SALVE_ADDRESS)```
+replacing x with the COM-Port number
